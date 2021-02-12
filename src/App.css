@@ -16,3 +16,8 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+#summ-list {
+  /* color: red; */
+  list-style-type: none;
+}
