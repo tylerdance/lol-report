@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import ShowData from './ShowData'
+import ShowChallenger from './ShowChallenger'
 import ShowMaster from './ShowMaster'
 import ShowGrandmaster from './ShowGrandmaster'
 import ShowDiamond from './ShowDiamond'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
-class FetchData2 extends Component {
+class FetchChallenger extends Component {
     constructor() {
         super()
 
@@ -30,7 +30,7 @@ class FetchData2 extends Component {
     render() {
         return (
             <div className="home">
-                <ShowData data={this.state.data} />
+                <ShowChallenger data={this.state.data} />
                 {/* <ShowGrandMaster data={this.state.data} />
                 <ShowMaster data={this.state.data} />
                 <ShowDiamond data={this.state.data} /> */}
@@ -39,4 +39,4 @@ class FetchData2 extends Component {
     }
 }
 
-export default FetchData2;
+export default FetchChallenger;

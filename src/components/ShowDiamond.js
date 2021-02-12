@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function ShowDiamond(props) {
     const [info, setInfo] = useState('')
@@ -10,7 +10,14 @@ function ShowDiamond(props) {
         setInfo(myObject)
         console.log(info);
         const render = myObject.map((key, index) => {
-            return <li id="summ-list">{myObject[index].summonerName}</li>
+            return(    
+                <div>
+                    <li id="summ-list"><strong>{myObject[index].summonerName}</strong></li>
+                    <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
+                    {/* <p id="summ-list"></p> */}
+                    <hr />
+                </div>
+            )
         })
         console.log(render);
         setInfo(render)

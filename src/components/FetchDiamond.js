@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import ShowData from './ShowData'
+
 import ShowMaster from './ShowMaster'
 import ShowGrandmaster from './ShowGrandmaster'
 import ShowDiamond from './ShowDiamond'
@@ -30,9 +30,7 @@ class FetchDiamond extends Component {
     render() {
         return (
             <div className="home">
-                {/* <ShowData data={this.state.data} /> */}
-                {/* <ShowGrandMaster data={this.state.data} /> */}
-                {/* <ShowMaster data={this.state.data} /> */}
+      
                 <ShowDiamond data={this.state.data} /> 
             </div>
         )
