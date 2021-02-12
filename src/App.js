@@ -9,6 +9,8 @@ function App() {
   // const [info, setInfo] = useState([])
   return (
     <div className="App">
+      <h1 id="lol-header">LoL Ranked Report</h1>
+      <h5 id="select-tier">Select a tier</h5>
       <FetchData2 />
     </div>
   );
