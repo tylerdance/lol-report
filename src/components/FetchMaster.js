@@ -7,7 +7,7 @@ import ShowDiamond from './ShowDiamond'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
-class FetchData2 extends Component {
+class FetchMaster extends Component {
     constructor() {
         super()
 
@@ -17,7 +17,7 @@ class FetchData2 extends Component {
     }
 
     componentDidMount() {
-        axios.get(`${REACT_APP_SERVER_URL}/api/request/request`).then(response => {
+        axios.get(`${REACT_APP_SERVER_URL}/api/request/master`).then(response => {
             console.log('Data fetched', response)
             this.setState({
                 data: response.data
@@ -30,13 +30,13 @@ class FetchData2 extends Component {
     render() {
         return (
             <div className="home">
-                <ShowData data={this.state.data} />
-                {/* <ShowGrandMaster data={this.state.data} />
+                {/* <ShowData data={this.state.data} /> */}
+                {/* <ShowGrandMaster data={this.state.data} /> */}
                 <ShowMaster data={this.state.data} />
-                <ShowDiamond data={this.state.data} /> */}
+                {/* <ShowDiamond data={this.state.data} /> */} 
             </div>
         )
     }
 }
 
-export default FetchData2;
+export default FetchMaster;
