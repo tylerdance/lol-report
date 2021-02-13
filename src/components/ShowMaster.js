@@ -11,7 +11,7 @@ function ShowMaster(props) {
         console.log(info);
         const render = myObject.map((key, index) => {
             return(    
-                <div>
+                <div id="data-div">
                     <li id="summ-list"><strong>{myObject[index].summonerName}</strong></li>
                     <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
                     {/* <p id="summ-list"></p> */}
@@ -27,7 +27,7 @@ function ShowMaster(props) {
 
     return(
         <div>
-            <button className="btn btn-primary" onClick={handleSetState}>Master</button>
+            <button id="tier-button" className="btn btn-primary" onClick={handleSetState}><strong>Master</strong></button>
             <p>{info}</p>
         </div>
     )
