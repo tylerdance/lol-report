@@ -13,6 +13,7 @@ function App() {
 
       <div id="bg-img-div">
         <h2 id="leaderboards-header">Leaderboards (North America)</h2>
+        <p>(Select a tier to view current rankings)</p>
         <div id="btn-div">
           <div className="scroll-div">
             <FetchChallenger />

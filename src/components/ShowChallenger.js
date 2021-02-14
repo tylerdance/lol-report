@@ -14,7 +14,7 @@ function ShowData(props) {
                 
                 <div id="data-div" key={key}>
                     <div>
-                        <li  id="summ-list"><strong>{myObject[index].summonerName}</strong></li>
+                        <li id="summ-list-names"><strong>{myObject[index].summonerName}</strong></li>
                         <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
 
                     </div>
