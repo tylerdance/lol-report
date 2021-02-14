@@ -11,7 +11,7 @@ function ShowGrandmaster(props) {
         console.log(info);
         const render = myObject.map((key, index) => {
             return(    
-                <div id="data-div">
+                <div id="data-div" >
                     <li id="summ-list"><strong>{myObject[index].summonerName}</strong></li>
                     <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
                     {/* <p id="summ-list"></p> */}

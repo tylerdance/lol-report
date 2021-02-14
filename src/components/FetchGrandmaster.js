@@ -18,11 +18,11 @@ class FetchGrandmaster extends Component {
 
     componentDidMount() {
         axios.get(`${REACT_APP_SERVER_URL}/api/request/grandmaster`).then(response => {
-            console.log('Data fetched', response)
+            // console.log('Data fetched', response)
             this.setState({
                 data: response.data
             })
-            console.log('data', this.state.data);
+            // console.log('data', this.state.data);
           
         })
     }

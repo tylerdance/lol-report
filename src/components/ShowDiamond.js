@@ -6,11 +6,6 @@ function ShowDiamond(props) {
 
     const myObject = props.data
 
-    // useEffect(() => {
-    //     console.log(props.data);
-
-    // })
-
     const handleSetState = () => {
         setInfo(myObject)
         console.log(info);
@@ -19,7 +14,6 @@ function ShowDiamond(props) {
                 <div id="data-div">
                     <li id="summ-list"><strong>{myObject[index].summonerName}</strong></li>
                     <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
-                    {/* <p id="summ-list"></p> */}
                     <hr />
                 </div>
             )
