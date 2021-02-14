@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import ShowGrandmaster from './ShowGrandmaster'
+import ShowGrandMaster from './ShowGrandMaster'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
@@ -28,7 +28,7 @@ class FetchGrandmaster extends Component {
         return (
             <div className="home">
            
-                <ShowGrandmaster data={this.state.data} />
+                <ShowGrandMaster data={this.state.data} />
         
             </div>
         )
