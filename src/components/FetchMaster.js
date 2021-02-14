@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 import ShowMaster from './ShowMaster'
-import ShowGrandmaster from './ShowGrandmaster'
-import ShowDiamond from './ShowDiamond'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
@@ -30,10 +28,7 @@ class FetchMaster extends Component {
     render() {
         return (
             <div className="home">
-            
-                {/* <ShowGrandMaster data={this.state.data} /> */}
                 <ShowMaster data={this.state.data} />
-                {/* <ShowDiamond data={this.state.data} /> */} 
             </div>
         )
     }

@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import ShowChallenger from './ShowChallenger'
-import ShowMaster from './ShowMaster'
 import ShowGrandmaster from './ShowGrandmaster'
-import ShowDiamond from './ShowDiamond'
 
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
