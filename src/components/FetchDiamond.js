@@ -19,8 +19,12 @@ class FetchDiamond extends Component {
             this.setState({
                 data: response.data
             })
+
             // console.log('data', this.state.data);
           
+        })
+        .catch(err => {
+            console.log(err);
         })
     }
 
@@ -28,7 +32,7 @@ class FetchDiamond extends Component {
         return (
             <div className="home">
       
-                <ShowDiamond data={this.state.data} /> 
+                {/* <ShowDiamond data={this.state.data} />  */}
             </div>
         )
     }

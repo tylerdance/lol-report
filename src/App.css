@@ -25,6 +25,11 @@ body {
   font-family: 'Kalam', cursive;
 }
 
+.hover-effect:hover {
+  color: rgba(255, 167, 72, 0.796);
+  cursor: text;
+}
+
 #leaderboards-header {
   padding-top: 30px;
   /* padding-bottom: 15px; */
@@ -75,6 +80,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 50px;
+  flex-wrap: wrap;
   /* height: 100vh; */
 }
 
@@ -89,6 +95,7 @@ body {
   font-family: 'Nunito', sans-serif;
   /* width: 100%; */
 }
+
 
 #data-div {
   /* background-color: rgb(188, 155, 255); */
@@ -120,6 +127,8 @@ body {
 }
 
 .patch-notes-list-item {
+  height: 160px;
+  overflow-y: scroll;
   width: 400px;
   min-width: 400px;
   padding: 10px;
@@ -127,5 +136,9 @@ body {
   border-radius: 5%;
   list-style-type: none;
   margin: 5px;
-  background-color: rgba(235, 255, 252, 0.748);
+  background-color: rgba(227, 244, 243, 0.748);
+}
+
+.patch-notes-list-item::-webkit-scrollbar {
+  display: none;
 }

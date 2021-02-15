@@ -6,9 +6,9 @@ function ShowGrandmaster(props) {
     const myObject = props.data
 
     const handleSetState = () => {
-        console.log(myObject);
+        // console.log(myObject);
         setInfo(myObject)
-        console.log(info);
+        // console.log(info);
         const render = myObject.map((key, index) => {
             return(    
                 <div id="data-div" >
@@ -19,9 +19,9 @@ function ShowGrandmaster(props) {
                 </div>
             )
         })
-        console.log(render);
+        // console.log(render);
         setInfo(render)
-        console.log(info);
+        // console.log(info);
     }
 
 

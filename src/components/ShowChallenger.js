@@ -12,7 +12,7 @@ function ShowData(props) {
         const render = myObject.map((key, index) => {
             return(    
                 
-                <div id="data-div" key={key}>
+                <div id="data-div">
                     <div>
                         <li id="summ-list-names"><strong>{myObject[index].summonerName}</strong></li>
                         <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>

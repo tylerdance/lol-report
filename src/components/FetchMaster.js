@@ -20,8 +20,12 @@ class FetchMaster extends Component {
             this.setState({
                 data: response.data
             })
+
             // console.log('data', this.state.data);
           
+        })
+        .catch(err => {
+            console.log(err);
         })
     }
 
