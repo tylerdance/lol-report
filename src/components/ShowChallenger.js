@@ -1,38 +1,30 @@
 import { useEffect, useState } from 'react';
 
 function ShowData(props) {
-    const [info, setInfo] = useState('')
+    const [info, setInfo] = useState([])
+        
+        const myObject = props.data
 
-    const myObject = props.data
 
-    const handleSetState = () => {
-        // console.log(myObject);
-        setInfo(myObject)
-        // console.log(info);
-        const render = myObject.map((key, index) => {
-            return(    
-                
-                <div id="data-div">
-                    <div>
+    useEffect(() => {
+        if (props.data) {
+            const render = myObject.map((key, index) => {
+                return(    
+                    <div id="data-div">
                         <li id="summ-list-names"><strong>{myObject[index].summonerName}</strong></li>
                         <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
-
+                        <hr />
                     </div>
-
-                    <hr />
-                </div>
-                
-            )
-        })
-        // console.log(render);
-        setInfo(render)
-        // console.log(info);
-    }
-
+                )
+            })
+            setInfo(render)
+            // console.log(info);
+        }
+    })
 
     return(
         <div>
-            <button id="tier-button" className="btn btn-primary" onClick={handleSetState}><strong>Challenger</strong></button>
+            <h4><strong>Challenger</strong></h4>
             <p>{info}</p>
         </div>
     )
