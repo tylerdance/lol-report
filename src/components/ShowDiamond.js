@@ -7,7 +7,7 @@ function ShowDiamond(props) {
         
     const myObject = props.data
 
-    useEffect(() => {
+    useEffect(async () => {
         const render = myObject.map((key, index) => {
             return(    
                 <div id="data-div">
@@ -17,16 +17,16 @@ function ShowDiamond(props) {
                 </div>
             )
         })
-        setInfo(render)
+        await setInfo(render)
         setLoading(false)
-        console.log(info);
+        // console.log(info);
 
     }, [props.data])
 
     return(
         <div>
             <h4 className="tier-header"><strong>Diamond</strong></h4>
-            <p>{loading === false ? info : 'Loading...'}</p>
+            <p>{loading === true ? <p>Loading...</p> : info}</p>
         </div>
     )
 }

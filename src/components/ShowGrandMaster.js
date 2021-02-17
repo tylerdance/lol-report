@@ -18,7 +18,7 @@ function ShowGrandmaster(props) {
         })
         setInfo(render)
         setLoading(false)
-        console.log(info);
+        // console.log(info);
 
     }, [props.data])
 
