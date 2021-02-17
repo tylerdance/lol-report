@@ -22,24 +22,37 @@ function App() {
 
         <div id="btn-div">
 
-          <div className="scroll-div">
-            <FetchChallenger />
-            <p className="loading">Loading...</p>
+          <div>
+            <h4 className="tier-header"><strong>Challenger</strong></h4>
+            <div className="scroll-div">
+              <FetchChallenger />
+              <p className="loading">Loading...</p>
+
+            </div>
 
           </div>
-          <div className="scroll-div">
-            <FetchGrandmaster />
-            <p className="loading">Loading...</p>
+          <div>
+          <h4 className="tier-header"><strong>Grandmaster</strong></h4>
+            <div className="scroll-div">
+              <FetchGrandmaster />
+              <p className="loading">Loading...</p>
 
+            </div>
           </div>
-          <div className="scroll-div">
-            <FetchMaster />
-            <p className="loading">Loading...</p>
+          <div>
+            <h4 className="tier-header"><strong>Master</strong></h4>
+            <div className="scroll-div">
+              <FetchMaster />
+              <p className="loading">Loading...</p>
+            </div>
+          </div>
 
-          </div>
-          {/* <div className="scroll-div">
-            <FetchDiamond />
-            <p id="loading">Loading...</p>
+          {/* <div>
+            <h4 className="tier-header"><strong>Diamond</strong></h4>
+            <div className="scroll-div">
+              <FetchDiamond />
+              <p id="loading">Loading...</p>
+            </div>
           </div> */}
 
         </div>

@@ -132,7 +132,7 @@ body {
 .patch-notes-list-item {
   height: 160px;
   overflow-y: scroll;
-  width: 400px;
+  width: 100%;
   min-width: 400px;
   padding: 10px;
   border: 2px solid black;

@@ -25,7 +25,7 @@ function ShowMaster(props) {
 
     return(
         <div>
-            <h4 className="tier-header"><strong>Master</strong></h4>
+            {/* <h4 className="tier-header"><strong>Master</strong></h4> */}
             <p>{loading === true ? <p>Loading...</p> : info}</p>
         </div>
     )

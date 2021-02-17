@@ -35,7 +35,7 @@ function ShowDiamond(props) {
 
     return(
         <div>
-            <h4 className="tier-header"><strong>Diamond</strong></h4>
+            {/* <h4 className="tier-header"><strong>Diamond</strong></h4> */}
             <p>{info}</p>
         </div>
     )
