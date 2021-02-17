@@ -75,6 +75,7 @@ body {
   /* background-position-x: -30px; */
   background-size: cover;
   width: 100%;
+  /* max-width: 100%; */
 
 }
 
@@ -132,13 +133,14 @@ body {
 .patch-notes-list-item {
   height: 160px;
   overflow-y: scroll;
-  width: 100%;
-  min-width: 400px;
+  width: 400px;
+  max-width: 100%;
   padding: 10px;
   border: 2px solid black;
   border-radius: 5%;
   list-style-type: none;
   margin: 5px;
+  margin-right: 38px;
   background-color: rgba(227, 244, 243, 0.748);
 }
 
