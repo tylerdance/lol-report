@@ -34,9 +34,9 @@ function App() {
           <div className="scroll-div">
             <FetchMaster />
           </div>
-          {/* <div className="scroll-div">
+          <div className="scroll-div">
             <FetchDiamond />
-          </div> */}
+          </div>
 
         </div>
       </div>

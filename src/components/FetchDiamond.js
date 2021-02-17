@@ -16,9 +16,24 @@ class FetchDiamond extends Component {
     componentDidMount() {
         axios.get(`${REACT_APP_SERVER_URL}/api/request/diamond`).then(response => {
             // console.log('Data fetched', response)
+            
             this.setState({
                 data: response.data
             })
+
+            const myObject = this.state.data
+    
+            // console.log(myObject);
+            const render = myObject.map((key, index) => {
+                return(    
+                    <div id="data-div">
+                        <li id="summ-list"><strong>{myObject[index].summonerName}</strong></li>
+                        {/* <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p> */}
+                        <hr />
+                    </div>
+                )
+            })
+            // console.log(render);
 
             // console.log('data', this.state.data);
           
@@ -28,11 +43,12 @@ class FetchDiamond extends Component {
         })
     }
 
+
     render() {
         return (
             <div className="home">
       
-                {/* <ShowDiamond data={this.state.data} />  */}
+                <ShowDiamond data={this.state.data} /> 
             </div>
         )
     }
