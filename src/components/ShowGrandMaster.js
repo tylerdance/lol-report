@@ -24,7 +24,7 @@ function ShowGrandmaster(props) {
 
     return(
         <div>
-            <h4><strong>Grandmaster</strong></h4>
+            <h4 className="tier-header"><strong>Grandmaster</strong></h4>
             <p>{info}</p>
         </div>
     )

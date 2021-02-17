@@ -24,7 +24,7 @@ function ShowData(props) {
 
     return(
         <div>
-            <h4><strong>Challenger</strong></h4>
+            <h4 className="tier-header"><strong>Challenger</strong></h4>
             <p>{info}</p>
         </div>
     )

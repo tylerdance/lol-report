@@ -84,15 +84,16 @@ body {
   /* height: 100vh; */
 }
 
-#tier-button{
-  margin-bottom: 40px;
+.tier-header{
+  margin-bottom: 30px;
   margin-top: 10px;
-  width: 140px;
-  color: black;
-  background-color: rgba(131, 157, 241, 0.83);
-  border: none;
-  font-size: 19px;
+  /* width: 140px; */
+  color: rgb(0, 0, 0);
+  /* background-color: rgba(131, 157, 241, 0.83); */
+  /* border: none; */
+  font-size: 25px;
   font-family: 'Nunito', sans-serif;
+  text-decoration: underline;
   /* width: 100%; */
 }
 
