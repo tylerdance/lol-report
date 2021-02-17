@@ -31,10 +31,14 @@ body {
 }
 
 #leaderboards-header {
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 30px;
+  margin-bottom: 15px;
   /* padding-bottom: 10px; */
   font-size: 31px;
   font-family: 'Nunito', sans-serif;
+
 }
 
 .home {
@@ -46,12 +50,16 @@ body {
 #summ-list-names {
   /* color: red; */
   list-style-type: none;
-  font-size: 21px;
+  font-size: 23px;
+  /* font-weight: 900; */
+  /* font-style: bold; */
 }
 #summ-list {
   /* color: red; */
   list-style-type: none;
   margin: 0px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.728);
 }
 
 .scroll-div {
@@ -60,6 +68,7 @@ body {
   /* overflow: hidden;  */
   /* border-left: 2px solid rgb(221, 221, 221); */
   width: 250px;
+  margin-bottom: 40px;
 
 }
 
@@ -71,11 +80,11 @@ body {
   background-image: url('http://res.cloudinary.com/dok4pz3i3/image/upload/v1613183767/summonersrift2-opa50_mtukan.jpg');
   /* background-image: url('http://res.cloudinary.com/dok4pz3i3/image/upload/v1613183701/summonersrift2-opa60_xuunw1.jpg'); */
   background-repeat: no-repeat;
-  background-position: center fixed;
+  background-position: center;
   /* background-position-x: -30px; */
   background-size: cover;
   width: 100%;
-  /* max-width: 100%; */
+  max-width: 100%;
 
 }
 
@@ -88,15 +97,16 @@ body {
 }
 
 .tier-header{
-  margin-bottom: 30px;
-  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  /* margin-top: 35px; */
   /* width: 140px; */
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.878);
   /* background-color: rgba(131, 157, 241, 0.83); */
   /* border: none; */
-  font-size: 25px;
+  font-size: 28px;
   font-family: 'Nunito', sans-serif;
-  text-decoration: underline;
+  border-bottom: 2px solid black;
+  /* text-decoration: underline; */
   /* width: 100%; */
 }
 
@@ -131,11 +141,12 @@ body {
 }
 
 .patch-notes-list-item {
-  height: 160px;
+  height: 137px;
   overflow-y: scroll;
   width: 400px;
   max-width: 100%;
-  padding: 10px;
+  padding-left: 15px;
+  padding-top: 5px;
   border: 2px solid black;
   border-radius: 5%;
   list-style-type: none;
