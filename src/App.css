@@ -32,7 +32,8 @@ body {
 
 #leaderboards-header {
   padding-top: 30px;
-  /* padding-bottom: 15px; */
+  /* padding-bottom: 10px; */
+  font-size: 31px;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -50,10 +51,11 @@ body {
 #summ-list {
   /* color: red; */
   list-style-type: none;
+  margin: 0px;
 }
 
 .scroll-div {
-  height: 500px;
+  height: 494px;
   overflow-y: scroll;
   /* overflow: hidden;  */
   /* border-left: 2px solid rgb(221, 221, 221); */
@@ -141,5 +143,9 @@ body {
 }
 
 .patch-notes-list-item::-webkit-scrollbar {
+  display: none;
+}
+
+#loading {
   display: none;
 }

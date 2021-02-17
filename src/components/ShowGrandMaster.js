@@ -12,6 +12,7 @@ function ShowGrandmaster(props) {
                 <div id="data-div">
                     <li id="summ-list-names"><strong>{myObject[index].summonerName}</strong></li>
                     <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
+                    <p id="summ-list">LP: {myObject[index].leaguePoints}</p>
                     <hr />
                 </div>
             )
@@ -25,7 +26,7 @@ function ShowGrandmaster(props) {
     return(
         <div>
             <h4 className="tier-header"><strong>Grandmaster</strong></h4>
-            <p>{loading === false ? info : 'Loading...'}</p>
+            <p>{loading === true ? <p>Loading...</p> : info}</p>
         </div>
     )
 }

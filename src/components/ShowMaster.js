@@ -12,6 +12,7 @@ function ShowMaster(props) {
                 <div id="data-div">
                     <li id="summ-list-names"><strong>{myObject[index].summonerName}</strong></li>
                     <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
+                    <p id="summ-list">LP: {myObject[index].leaguePoints}</p>
                     <hr />
                 </div>
             )
@@ -25,7 +26,7 @@ function ShowMaster(props) {
     return(
         <div>
             <h4 className="tier-header"><strong>Master</strong></h4>
-            <p>{loading === false ? info : 'Loading...'}</p>
+            <p>{loading === true ? <p>Loading...</p> : info}</p>
         </div>
     )
 }

@@ -8,25 +8,35 @@ function ShowDiamond(props) {
     const myObject = props.data
 
     useEffect(async () => {
-        const render = myObject.map((key, index) => {
+        const render = await myObject.map((key, index) => {
             return(    
                 <div id="data-div">
                     <li id="summ-list-names"><strong>{myObject[index].summonerName}</strong></li>
                     <p id="summ-list">{myObject[index].wins} wins / {myObject[index].losses} losses</p>
+                    <p id="summ-list">LP: {myObject[index].leaguePoints}</p>
                     <hr />
                 </div>
             )
         })
         await setInfo(render)
-        setLoading(false)
+        if (render) {
+            setLoading(false)
+
+        }
         // console.log(info);
 
     }, [props.data])
 
+    // if (loading === false) {
+    //     document.getElementById('loading').style.display = "block"
+    // } else {
+    //     return
+    // }
+
     return(
         <div>
             <h4 className="tier-header"><strong>Diamond</strong></h4>
-            <p>{loading === true ? <p>Loading...</p> : info}</p>
+            <p>{info}</p>
         </div>
     )
 }

@@ -23,20 +23,24 @@ function App() {
         <div id="btn-div">
 
           <div className="scroll-div">
-         
             <FetchChallenger />
+            <p className="loading">Loading...</p>
 
           </div>
           <div className="scroll-div">
             <FetchGrandmaster />
+            <p className="loading">Loading...</p>
 
           </div>
           <div className="scroll-div">
             <FetchMaster />
+            <p className="loading">Loading...</p>
+
           </div>
-          <div className="scroll-div">
+          {/* <div className="scroll-div">
             <FetchDiamond />
-          </div>
+            <p id="loading">Loading...</p>
+          </div> */}
 
         </div>
       </div>
