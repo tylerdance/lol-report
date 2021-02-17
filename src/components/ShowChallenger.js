@@ -4,9 +4,7 @@ function ShowData(props) {
     const [info, setInfo] = useState([])
     const [loading, setLoading] = useState(true)
     
-    // console.log(loading);
     const myObject = props.data
-
 
     useEffect(() => {
         const render = myObject.map((key, index) => {
@@ -19,6 +17,7 @@ function ShowData(props) {
             )
         })
         setInfo(render)
+        setLoading(false)
         console.log(info);
 
     }, [props.data])
@@ -26,7 +25,7 @@ function ShowData(props) {
     return(
         <div>
             <h4 className="tier-header"><strong>Challenger</strong></h4>
-            <p>{info}</p>
+            <p>{loading === false ? info : 'Loading...'}</p>
         </div>
     )
 }

@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 
 function ShowGrandmaster(props) {
     const [info, setInfo] = useState([])
+    const [loading, setLoading] = useState(true)
         
-        const myObject = props.data
-
+    const myObject = props.data
 
     useEffect(() => {
         const render = myObject.map((key, index) => {
@@ -17,6 +17,7 @@ function ShowGrandmaster(props) {
             )
         })
         setInfo(render)
+        setLoading(false)
         console.log(info);
 
     }, [props.data])
@@ -24,7 +25,7 @@ function ShowGrandmaster(props) {
     return(
         <div>
             <h4 className="tier-header"><strong>Grandmaster</strong></h4>
-            <p>{info}</p>
+            <p>{loading === false ? info : 'Loading...'}</p>
         </div>
     )
 }

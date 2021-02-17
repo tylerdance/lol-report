@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 function ShowDiamond(props) {
     const [info, setInfo] = useState([])
+    const [loading, setLoading] = useState(true)
         
     const myObject = props.data
 
@@ -17,6 +18,7 @@ function ShowDiamond(props) {
             )
         })
         setInfo(render)
+        setLoading(false)
         console.log(info);
 
     }, [props.data])
@@ -24,7 +26,7 @@ function ShowDiamond(props) {
     return(
         <div>
             <h4 className="tier-header"><strong>Diamond</strong></h4>
-            <p>{info}</p>
+            <p>{loading === false ? info : 'Loading...'}</p>
         </div>
     )
 }
