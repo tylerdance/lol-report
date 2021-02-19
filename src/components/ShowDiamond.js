@@ -7,8 +7,8 @@ function ShowDiamond(props) {
         
     const myObject = props.data
 
-    useEffect(async () => {
-        const render = await myObject.map((key, index) => {
+    useEffect(() => {
+        const render = myObject.map((key, index) => {
             return(    
                 <div id="data-div">
                     <li id="summ-list-names"><strong>{myObject[index].summonerName}</strong></li>
@@ -18,20 +18,15 @@ function ShowDiamond(props) {
                 </div>
             )
         })
-        await setInfo(render)
-        if (render) {
-            setLoading(false)
-
-        }
+        setInfo(render)
+        setLoading(false)
         // console.log(info);
 
     }, [props.data])
 
-    // if (loading === false) {
-    //     document.getElementById('loading').style.display = "block"
-    // } else {
-    //     return
-    // }
+    if (loading === false) {
+        document.getElementById('loading').style.display = "none"
+    } 
 
     return(
         <div>
