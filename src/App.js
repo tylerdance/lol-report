@@ -94,7 +94,7 @@ function App() {
         </div>
       </div>
 
-      <PatchNotes />
+      {/* <PatchNotes /> */}
     </div>
   );
 }
